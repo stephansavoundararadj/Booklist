@@ -1,0 +1,48 @@
+{% extends "BookBundle::layout.html.twig" %}
+
+{% block sub_body %}
+
+{{ parent() }}
+
+<h3>Liste des romans</h3>
+
+{% include "BookBundle:Book:view-book-dialogs.html.twig" %}
+
+<div class="panel panel-default">
+
+	<div class="panel-heading">
+		<h4>Liste des romans</h4>
+	</div>
+	
+	<div class="panel-body">
+		<table class="table table-striped nowrap-table">
+			<thead>
+				<tr>
+					<th>Titre du roman</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				{% for book in book_list %}
+				<tr>
+					<div class="row">
+						<div class="col-md-4"><td>{{ book.title }}</td></div>
+						
+{# 						<div class="col-md-4"><td><a data-toggle="modal" href="#view-book-detail-dialog-{{ book.id }}" class="btn btn-primary">Voir</a></td></div>#}
+						
+						<div class="col-md-4"><td><a href="{{ path('book_detail', {'book_id': book.id}) }}" class="btn btn-primary">Détail</a></td></div>
+					</div>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<br/><br/>
+<a href="{{ path('book_add') }}" class="btn btn-primary">Ajouter un roman</a>
+
+{% endblock %}
+
+
+

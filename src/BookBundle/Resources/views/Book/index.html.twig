@@ -1,0 +1,18 @@
+{% extends "BookBundle::layout.html.twig" %}
+
+{% block sub_body %}
+
+<h1>Librairie</h1>
+    
+Bienvenue dans cette petite librairie qui regroupe l'ensemble des romans que j'ai apprécié.<br/>
+Vous trouverez des romans de la littérature française, de science fiction et des romans<br/>
+également historique.<br/><br/>
+Bonne découverte!<br/>
+
+<br/><br/>
+<a href="{{ path('book_view') }}" class="btn btn-primary">View books</a>
+
+<br/><br/>
+<a href="{{ path('book_add') }}" class="btn btn-primary">Add a book</a>
+
+{% endblock %}

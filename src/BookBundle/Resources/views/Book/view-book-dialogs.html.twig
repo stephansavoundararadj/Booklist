@@ -1,0 +1,22 @@
+{% for book in book_list %}
+	<div class="modal" id="view-book-detail-dialog-{{ book.id }}">
+		
+		<div class="modal-dialog">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+					Id: {{ book.id }}
+				</div>
+				
+				<div class="modal-body">
+					ISBN: {{ book.isbn }}
+				</div>
+				
+				<div class="modal-footer">
+					<a data-dismiss="modal" class="btn btn-default">Quitter</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+{% endfor %}

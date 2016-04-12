@@ -1,0 +1,19 @@
+<div class="panel-group">
+	<div class="panel panel-librairie">
+	
+		<div class="panel-heading">Menu</div>
+		<ul id="librairie-choix" class="list-group panel-collapse">
+		
+{# 			{% if active_menu == "VOIRROMAN" %}#}
+{# 				<a class="list-group-item">Liste des romans <span class="glyphicon glyphicon-chevron-right titre-equipe pull-right"></span></a>#}
+{# 			{% else %}#}
+{# 				<a class="list-group-item" href="{{ path('lib_livre_voir_roman') }}">Liste des romans</a>#}
+{# 			{% endif %}	#}
+
+			<a class="list-group-item" href="{{ path('book_index') }}">Accueil</a>
+			<a class="list-group-item" href="{{ path('book_view') }}">Mes romans</a>
+
+		</ul>
+		
+	</div>
+</div>

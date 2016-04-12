@@ -1,0 +1,20 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+	<div class="row">
+		<div class="col-md-3">
+			{% include "BookBundle:Menu:book-menu.html.twig" %}
+		</div>
+		
+		<div class="col-md-9">
+			{% block sub_body %}
+		
+			{% endblock %}
+		</div>
+	</div>
+
+{% endblock %}
+
+
+

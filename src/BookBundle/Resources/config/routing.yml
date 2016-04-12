@@ -1,0 +1,31 @@
+book_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BookBundle:Default:index }
+
+book_index:
+    path: /index
+    defaults: { _controller: BookBundle:Book:index }
+
+book_add:
+   path:     /add_book
+   defaults: { _controller: BookBundle:Book:addBook }
+
+book_detail:
+    path:     /get_book_detail/{book_id}
+    defaults: { _controller: BookBundle:Book:getBookDetail }
+
+book_validate:
+    path:     /validate_book/{book_isbn}
+    defaults: { _controller: BookBundle:Book:validateBook }
+
+book_view:
+    path:     /view
+    defaults: { _controller: BookBundle:Book:viewBook }
+
+book_info:
+    path:     /info
+    defaults: { _controller: BookBundle:Book:getBookInfo }
+
+
+
+

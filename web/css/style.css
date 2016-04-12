@@ -1,0 +1,13 @@
+
+body { background-image: url("img/livre_large.jpeg") }
+
+.banner{
+	box-shadow: 0 10px 6px -6px rgba(204, 204, 204, 0.8);
+}
+
+.container{
+	<!-- background-color: #F8FAC0; -->
+
+	background-image: url(img/livre_large.jpeg);
+	border-radius: 2px 2px 2px 2px;
+}

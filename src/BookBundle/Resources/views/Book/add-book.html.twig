@@ -1,0 +1,21 @@
+{% extends "BookBundle::layout.html.twig" %}
+
+{% block sub_body %}
+{{ parent() }}
+
+<h3>Formulaire ajout de roman</h3>
+
+<div class="well">
+	<form id="formul" method="post" {{ form_enctype(form) }}>
+		{{ form_widget(form) }}
+		<input type="submit" class="btn btn-primary">
+	</form>
+</div>
+
+<br/><br/>
+<a href="{{ path('book_index') }}" class="btn btn-primary">Retour à l'accueil</a>
+
+{% endblock %}
+
+
+
